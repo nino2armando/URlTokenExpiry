@@ -1,0 +1,3 @@
+[submodule "shared-metrics"]
+	path = shared-metrics
+	url = gitolite@gitserver:shared-metrics
