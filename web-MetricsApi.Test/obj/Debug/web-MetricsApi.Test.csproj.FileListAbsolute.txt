@@ -1,0 +1,12 @@
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Test\bin\Debug\web-MetricsApi.Test.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Test\bin\Debug\web-MetricsApi.Test.pdb
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Test\bin\Debug\nunit.framework.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Test\bin\Debug\Rhino.Mocks.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Test\bin\Debug\nunit.framework.xml
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Test\bin\Debug\Rhino.Mocks.xml
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Test\obj\Debug\web-MetricsApi.Test.csprojResolveAssemblyReference.cache
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Test\obj\Debug\web-MetricsApi.Test.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Test\obj\Debug\web-MetricsApi.Test.pdb
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Test\bin\Debug\Pbp.Metrics.Core.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Test\bin\Debug\Pbp.Metrics.Core.pdb
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Test\bin\Debug\web-MetricsApi.Test.dll.config
