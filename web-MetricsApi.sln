@@ -5,12 +5,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web-MetricsApi", "web-Metri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pbp.Metrics.Core", "shared-metrics\Pbp.Metrics.Core\Pbp.Metrics.Core.csproj", "{70AD4D95-A10F-4C12-A543-A408D6CB7846}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web-MetricsApi.Test", "web-MetricsApi.Test\web-MetricsApi.Test.csproj", "{3A1BA735-4822-4539-9E47-DED526632D2F}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F7E232D5-9ABD-47DE-AEBD-89EE99E089BD}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web-MetricsApi.Tests.Unit", "web-MetricsApi.Tests.Unit\web-MetricsApi.Tests.Unit.csproj", "{8BCA35D9-AC18-431A-BDCB-D3C0298A71CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web-MetricsApi.Tests.Integration", "web-MetricsApi.Tests.Integration\web-MetricsApi.Tests.Integration.csproj", "{43F13B57-6C58-4AB5-A50A-E06B4E6B552E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,10 +28,14 @@ Global
 		{70AD4D95-A10F-4C12-A543-A408D6CB7846}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70AD4D95-A10F-4C12-A543-A408D6CB7846}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70AD4D95-A10F-4C12-A543-A408D6CB7846}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3A1BA735-4822-4539-9E47-DED526632D2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3A1BA735-4822-4539-9E47-DED526632D2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3A1BA735-4822-4539-9E47-DED526632D2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3A1BA735-4822-4539-9E47-DED526632D2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BCA35D9-AC18-431A-BDCB-D3C0298A71CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BCA35D9-AC18-431A-BDCB-D3C0298A71CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BCA35D9-AC18-431A-BDCB-D3C0298A71CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BCA35D9-AC18-431A-BDCB-D3C0298A71CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43F13B57-6C58-4AB5-A50A-E06B4E6B552E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43F13B57-6C58-4AB5-A50A-E06B4E6B552E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43F13B57-6C58-4AB5-A50A-E06B4E6B552E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43F13B57-6C58-4AB5-A50A-E06B4E6B552E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

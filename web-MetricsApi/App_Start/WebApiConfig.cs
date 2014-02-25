@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web.Http;
+﻿using System.Web.Http;
+using System.Web.Mvc;
+using Microsoft.Practices.Unity;
+using web_MetricsApi.DependencyResolver;
 
 namespace web_MetricsApi
 {
@@ -11,9 +11,15 @@ namespace web_MetricsApi
         {
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
+                routeTemplate: "api/{controller}/{AppName}",
+                defaults:new {RouteParameter.Optional}          
             );
+
+            var container = new UnityContainer();
+            container.RegisterLocalServices();
+            config.DependencyResolver = new UnityResolver(container);
+            var unityFactory = new UnityControllerFactory(container);
+            ControllerBuilder.Current.SetControllerFactory(unityFactory);
 
             // Uncomment the following line of code to enable query support for actions with an IQueryable or IQueryable<T> return type.
             // To avoid processing unexpected or malicious queries, use the validation settings on QueryableAttribute to validate incoming queries.

@@ -59,6 +59,10 @@
       <Project>{70ad4d95-a10f-4c12-a543-a408d6cb7846}</Project>
       <Name>Pbp.Metrics.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\web-MetricsApi\web-MetricsApi.csproj">
+      <Project>{63C4AA91-5583-4940-ADF5-B2189087E1D5}</Project>
+      <Name>web-MetricsApi</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

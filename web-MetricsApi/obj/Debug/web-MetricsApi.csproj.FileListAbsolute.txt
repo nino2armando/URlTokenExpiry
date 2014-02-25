@@ -138,3 +138,9 @@ C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\zh-Hant\Syste
 C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\obj\Debug\web-MetricsApi.csprojResolveAssemblyReference.cache
 C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\obj\Debug\web-MetricsApi.dll
 C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\obj\Debug\web-MetricsApi.pdb
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\Pbp.Metrics.Core.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\Pbp.Metrics.Core.pdb
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\Microsoft.Practices.Unity.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\Microsoft.Practices.Unity.xml
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\Microsoft.Practices.Unity.Configuration.xml

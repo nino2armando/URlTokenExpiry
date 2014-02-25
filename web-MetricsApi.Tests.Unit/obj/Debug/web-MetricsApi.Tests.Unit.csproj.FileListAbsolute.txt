@@ -1,0 +1,4 @@
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Unit\bin\Debug\web-MetricsApi.Tests.Unit.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Unit\bin\Debug\web-MetricsApi.Tests.Unit.pdb
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Unit\obj\Debug\web-MetricsApi.Tests.Unit.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Unit\obj\Debug\web-MetricsApi.Tests.Unit.pdb
