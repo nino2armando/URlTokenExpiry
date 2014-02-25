@@ -1,6 +1,8 @@
 ﻿using System.Web.Http;
+using System.Web.Http.Dispatcher;
 using System.Web.Mvc;
 using Microsoft.Practices.Unity;
+using web_MetricsApi.Controllers;
 using web_MetricsApi.DependencyResolver;
 
 namespace web_MetricsApi
@@ -18,8 +20,9 @@ namespace web_MetricsApi
             var container = new UnityContainer();
             container.RegisterLocalServices();
             config.DependencyResolver = new UnityResolver(container);
-            var unityFactory = new UnityControllerFactory(container);
-            ControllerBuilder.Current.SetControllerFactory(unityFactory);
+
+            // Register Controller Activator
+            container.RegisterInstance<IHttpControllerActivator>(new UnityHttpControllerActivator(container));
 
             // Uncomment the following line of code to enable query support for actions with an IQueryable or IQueryable<T> return type.
             // To avoid processing unexpected or malicious queries, use the validation settings on QueryableAttribute to validate incoming queries.

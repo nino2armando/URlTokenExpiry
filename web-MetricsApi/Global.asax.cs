@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Http;
+﻿using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
-using Microsoft.Practices.Unity;
-using web_MetricsApi.DependencyResolver;
 
 namespace web_MetricsApi
 {
@@ -24,9 +18,6 @@ namespace web_MetricsApi
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-
-            var unityControllerFactory = new UnityControllerFactory(new UnityContainer());
-            ControllerBuilder.Current.SetControllerFactory(unityControllerFactory);
         }
     }
 }
