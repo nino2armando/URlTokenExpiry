@@ -7,36 +7,47 @@ namespace web_MetricsApi.Services
 {
     public class MetricService : IMetricService
     {
-        public IMetricClient _MetricClient;
-        public IMetricRepository _MetricRepository;
+        public ICoreClientFactory _clientFactory;
+        public IMetricRepository _metricRepository;
 
-        public MetricService(IMetricClient metricClient, IMetricRepository metricRepository)
+        public MetricService(ICoreClientFactory clientFactory, IMetricRepository metricRepository)
         {
-            _MetricClient = metricClient;
-            _MetricRepository = metricRepository;
+            _clientFactory = clientFactory;
+            _metricRepository = metricRepository;
         }
 
-        public void Publish(Metric metric)
+        public Action<string, long, DateTime> FindClientActionToInvoke<T>(Metric metric) where T : class , IMetricClient 
         {
+            var node = _clientFactory.FindClient<T>();
+
+            if(metric == null)
+                throw new ArgumentNullException("metric");
+
+            Action<string, long, DateTime> clientMethod = null;
+
             switch (metric.Type)
             {
                 case MetricType.Timing:
-                    _MetricClient.LogTiming(metric.Name, metric.Value, metric.Time);
-                    _MetricRepository.WriteToDb(metric);
+                    clientMethod = (s, v, t) => node.LogTiming(s, v, t);                  
                     break;
                 case MetricType.Count:
-                    _MetricClient.LogCount(metric.Name, metric.Value, metric.Time);
-                    _MetricRepository.WriteToDb(metric);
+                    clientMethod = (s, v, t) => node.LogCount(s, v, t);   
                     break;
                 case MetricType.Gauge:
-                    _MetricClient.LogGauge(metric.Name, metric.Value, metric.Time);
-                    _MetricRepository.WriteToDb(metric);
+                    clientMethod = (s, v, t) => node.LogGauge(s, v, t);   
                     break;
                 case MetricType.Set:
-                    _MetricClient.LogSet(metric.Name, metric.Value, metric.Time);
-                    _MetricRepository.WriteToDb(metric);
+                    clientMethod = (s, v, t) => node.LogSet(s, v, t);   
                     break;
             }
+
+            return clientMethod;
+        }
+
+        public void Publish(Action<string, long, DateTime> action, Metric metric)
+        {
+            action.Invoke(metric.Name, metric.Value, metric.Time);
+            _metricRepository.WriteToDb(metric);
         }
     }
 }

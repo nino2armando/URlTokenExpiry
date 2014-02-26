@@ -8,31 +8,31 @@ using web_MetricsApi.Models;
 using web_MetricsApi.Repository;
 using web_MetricsApi.Services;
 
-namespace web_MetricsApi.Test
+namespace web_MetricsApi.Tests.Integration
 {
     [TestFixture]
     public class MainTest
     {
-        public IMetricService _Service;
-        public IMetricRepository _MetricRepository;
+        public IMetricService _service;
+        public IMetricRepository _metricRepository;
 
-        [Test]
-        public void CallService_can_handle_statdClient()
-        {
-            // prefixKey.includeMachineName.metricsHttpModule_type.HttpContextUri.ClientName
-            // MetricsApi.Nkhoda001.stat_type.Ios.default_aspx
-            var statsd = WebMetricProvider.Instance;
-            _MetricRepository = MockRepository.GenerateStub<IMetricRepository>();
-            _Service = new MetricService(statsd, _MetricRepository);
+        //[Test]
+        //public void CallService_can_handle_statdClient()
+        //{
+        //    // prefixKey.includeMachineName.metricsHttpModule_type.HttpContextUri.ClientName
+        //    // MetricsApi.Nkhoda001.stat_type.Ios.default_aspx
+        //    var statsd = WebMetricProvider.Instance;
+        //    _metricRepository = MockRepository.GenerateStub<IMetricRepository>();
+        //    _service = new MetricService(statsd, _metricRepository);
 
-            var ran = new Random();
-            for (int i = 0; i < 100; i++)
-            {
-                int item = ran.Next(0, 3);
-                var metric = GetMetic(item);
-                _Service.Publish(metric);
-            }
-        }
+        //    var ran = new Random();
+        //    for (int i = 0; i < 100; i++)
+        //    {
+        //        int item = ran.Next(0, 5);
+        //        var metric = GetMetic(item);
+        //        //_service.Publish(metric);
+        //    }
+        //}
 
         [Test]
         public void StatDServerTest()
@@ -97,6 +97,22 @@ namespace web_MetricsApi.Test
                     new Metric()
                         {
                             Name = "Help.aspx".ToMetricKey(),
+                            Value = randomVal,
+                            Time = DateTime.Now,
+                            Type = MetricType.Set
+
+                        },
+                    new Metric()
+                        {
+                            Name = "Test.aspx".ToMetricKey(),
+                            Value = randomVal,
+                            Time = DateTime.Now,
+                            Type = MetricType.Set
+
+                        },
+                    new Metric()
+                        {
+                            Name = "payment.aspx".ToMetricKey(),
                             Value = randomVal,
                             Time = DateTime.Now,
                             Type = MetricType.Set

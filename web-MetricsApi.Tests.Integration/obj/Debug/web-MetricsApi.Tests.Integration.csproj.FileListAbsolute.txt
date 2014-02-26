@@ -8,7 +8,6 @@ C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Integration
 C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Integration\bin\Debug\System.Web.Http.dll
 C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Integration\bin\Debug\System.Web.Optimization.dll
 C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Integration\bin\Debug\System.Net.Http.Formatting.dll
-C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Integration\bin\Debug\Microsoft.Practices.Unity.dll
 C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Integration\bin\Debug\System.Web.Http.Tracing.dll
 C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Integration\bin\Debug\System.Web.Http.WebHost.dll
 C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Integration\bin\Debug\Newtonsoft.Json.dll
@@ -18,10 +17,16 @@ C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Integration
 C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Integration\bin\Debug\Rhino.Mocks.xml
 C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Integration\bin\Debug\System.Web.Http.xml
 C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Integration\bin\Debug\System.Net.Http.Formatting.xml
-C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Integration\bin\Debug\Microsoft.Practices.Unity.xml
 C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Integration\bin\Debug\System.Web.Http.Tracing.xml
 C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Integration\bin\Debug\System.Web.Http.WebHost.xml
 C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Integration\bin\Debug\Newtonsoft.Json.xml
 C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Integration\obj\Debug\web-MetricsApi.Tests.Integration.csprojResolveAssemblyReference.cache
 C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Integration\obj\Debug\web-MetricsApi.Tests.Integration.dll
 C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Integration\obj\Debug\web-MetricsApi.Tests.Integration.pdb
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Integration\bin\Debug\Ninject.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Integration\bin\Debug\Ninject.Web.Common.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Integration\bin\Debug\WebActivatorEx.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Integration\bin\Debug\Ninject.xml
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Integration\bin\Debug\Ninject.Web.Common.xml
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Integration\bin\Debug\AutoMapper.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi.Tests.Integration\bin\Debug\AutoMapper.xml

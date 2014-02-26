@@ -1,9 +1,8 @@
-﻿using System.Web.Http;
-using System.Web.Http.Dispatcher;
-using System.Web.Mvc;
-using Microsoft.Practices.Unity;
-using web_MetricsApi.Controllers;
-using web_MetricsApi.DependencyResolver;
+﻿using System.Net.Http.Formatting;
+using System.Web.Http;
+using Newtonsoft.Json;
+using web_MetricsApi.App_Start;
+using web_MetricsApi.Filters;
 
 namespace web_MetricsApi
 {
@@ -17,12 +16,12 @@ namespace web_MetricsApi
                 defaults:new {RouteParameter.Optional}          
             );
 
-            var container = new UnityContainer();
-            container.RegisterLocalServices();
-            config.DependencyResolver = new UnityResolver(container);
+            // Filters
+            config.Filters.Add(new ValidateModelAttribute());
 
-            // Register Controller Activator
-            container.RegisterInstance<IHttpControllerActivator>(new UnityHttpControllerActivator(container));
+            // Formatter
+            var jsonFormatter = GlobalConfiguration.Configuration.Formatters.JsonFormatter;
+            jsonFormatter.SerializerSettings.DateTimeZoneHandling = DateTimeZoneHandling.Utc;
 
             // Uncomment the following line of code to enable query support for actions with an IQueryable or IQueryable<T> return type.
             // To avoid processing unexpected or malicious queries, use the validation settings on QueryableAttribute to validate incoming queries.
