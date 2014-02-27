@@ -30,7 +30,7 @@ namespace web_MetricsApi.Controllers
 
         // POST api/metric
         [ValidateModel]
-        public HttpResponseMessage Post(bool persist, MetricContract metric)
+        public HttpResponseMessage Post(MetricContract metric)
         {
             var url = HttpContext.Current.Request.Url.AbsolutePath;
 
@@ -42,9 +42,8 @@ namespace web_MetricsApi.Controllers
             {
                 var metricModel = Mapper.Map<MetricContract, Metric>(metric);
 
-                var clientMethod = persist
-                                          ? _metricService.FindClientActionToInvoke<MetricPipeClient>(metricModel)
-                                          : _metricService.FindClientActionToInvoke<GraphiteClient>(metricModel);
+                var clientMethod = _metricService.FindClientActionToInvoke<Statsd>(metricModel);
+                // _metricService.FindClientActionToInvoke<GraphiteClient>(metricModel);
                 
                 _metricService.Publish(clientMethod, metricModel);
 
