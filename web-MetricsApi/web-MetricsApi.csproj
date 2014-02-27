@@ -159,7 +159,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
-<<<<<<< HEAD
     <None Include="build_marker.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -239,10 +238,6 @@
     <Content Include="Deployment\Octopus.ps1" />
     <Content Include="Deployment\IIS.ps1" />
     <Content Include="Deployment\Environment.ps1" />
-=======
-    <Content Include="favicon.ico" />
-    <Content Include="Global.asax" />
->>>>>>> yoda-473-Api-EndPoints-and-controllerActivator
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
