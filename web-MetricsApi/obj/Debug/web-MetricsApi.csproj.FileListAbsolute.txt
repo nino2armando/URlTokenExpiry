@@ -68,3 +68,40 @@ c:\users\nkhodabandeh\documents\visual studio 2012\Projects\web-MetricsApi\web-M
 c:\users\nkhodabandeh\documents\visual studio 2012\Projects\web-MetricsApi\web-MetricsApi\obj\Debug\web-MetricsApi.csprojResolveAssemblyReference.cache
 c:\users\nkhodabandeh\documents\visual studio 2012\Projects\web-MetricsApi\web-MetricsApi\obj\Debug\web-MetricsApi.dll
 c:\users\nkhodabandeh\documents\visual studio 2012\Projects\web-MetricsApi\web-MetricsApi\obj\Debug\web-MetricsApi.pdb
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\web-MetricsApi.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\web-MetricsApi.pdb
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\Antlr3.Runtime.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\EntityFramework.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\Newtonsoft.Json.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\Pbp.Metrics.Core.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\System.Net.Http.Formatting.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\System.Web.Http.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\System.Web.Http.Tracing.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\System.Web.Http.WebHost.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\System.Web.Optimization.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\System.Web.Providers.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\WebGrease.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\Pbp.Metrics.Core.pdb
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\EntityFramework.xml
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\Newtonsoft.Json.xml
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\System.Net.Http.Formatting.xml
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\System.Web.Http.xml
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\System.Web.Http.WebHost.xml
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\System.Web.Http.Tracing.xml
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\obj\Debug\web-MetricsApi.csprojResolveAssemblyReference.cache
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\obj\Debug\web-MetricsApi.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\obj\Debug\web-MetricsApi.pdb
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\Ninject.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\Ninject.Extensions.Logging.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\Ninject.Extensions.Logging.Log4Net.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\Ninject.Web.Common.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\WebActivatorEx.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\Ninject.xml
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\Ninject.Extensions.Logging.pdb
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\Ninject.Extensions.Logging.xml
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\Ninject.Extensions.Logging.Log4Net.pdb
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\Ninject.Extensions.Logging.Log4Net.xml
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\Ninject.Web.Common.xml
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\AutoMapper.dll
+C:\Users\nkhodabandeh\Repository\web-MetricsApi\web-MetricsApi\bin\AutoMapper.xml
