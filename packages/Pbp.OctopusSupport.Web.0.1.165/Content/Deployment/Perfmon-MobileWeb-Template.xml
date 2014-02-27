@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCollectorSet>
+	<Status>1</Status>
+	<Duration>0</Duration>
+	<Description>
+	</Description>
+	<DescriptionUnresolved>
+	</DescriptionUnresolved>
+	<DisplayName>
+	</DisplayName>
+	<DisplayNameUnresolved>
+	</DisplayNameUnresolved>
+	<SchedulesEnabled>-1</SchedulesEnabled>
+	<LatestOutputLocation>{CollectionLocation}\{MachineName}_{Date}-{LastCollectionSession}</LatestOutputLocation>
+	<Name>Mobileweb</Name>
+	<OutputLocation>{CollectionLocation}\{MachineName}_{Date}-{NextCollectionSession}</OutputLocation>
+	<RootPath>{CollectionLocation}</RootPath>
+	<Segment>-1</Segment>
+	<SegmentMaxDuration>86400</SegmentMaxDuration>
+	<SegmentMaxSize>0</SegmentMaxSize>
+	<SerialNumber>{SerialNumber}</SerialNumber>
+	<Server>
+	</Server>
+	<Subdirectory>
+	</Subdirectory>
+	<SubdirectoryFormat>3</SubdirectoryFormat>
+	<SubdirectoryFormatPattern>yyyyMMdd\-NNNNNN</SubdirectoryFormatPattern>
+	<Task>
+	</Task>
+	<TaskRunAsSelf>0</TaskRunAsSelf>
+	<TaskArguments>
+	</TaskArguments>
+	<TaskUserTextArguments>
+	</TaskUserTextArguments>
+	<UserAccount>SYSTEM</UserAccount>
+	<Security>O:BAG:DUD:AI(A;;FA;;;SY)(A;;FA;;;BA)(A;;FR;;;LU)(A;;0x1301ff;;;S-1-5-80-2661322625-712705077-2999183737-3043590567-590698655)(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200ab;;;LU)(A;ID;FR;;;AU)(A;ID;FR;;;LS)(A;ID;FR;;;NS)</Security>
+	<StopOnCompletion>0</StopOnCompletion>
+	<PerformanceCounterDataCollector>
+		<DataCollectorType>0</DataCollectorType>
+		<Name>DataCollector01</Name>
+		<FileName>MobileWeb</FileName>
+		<FileNameFormat>1</FileNameFormat>
+		<FileNameFormatPattern>
+		</FileNameFormatPattern>
+		<LogAppend>0</LogAppend>
+		<LogCircular>0</LogCircular>
+		<LogOverwrite>0</LogOverwrite>
+		<LatestOutputLocation>{CollectionLocation}\{MachineName}_{Date}-{LastCollectionSession}\MobileWeb.tsv</LatestOutputLocation>
+		<DataSourceName>
+		</DataSourceName>
+		<SampleInterval>10</SampleInterval>
+		<SegmentMaxRecords>0</SegmentMaxRecords>
+		<LogFileFormat>1</LogFileFormat>
+		<Counter>\.NET CLR LocksAndThreads(w3wp)\# of current logical Threads</Counter>
+		<Counter>\.NET CLR Memory(w3wp)\# Bytes in all Heaps</Counter>
+		<Counter>\Process(w3wp)\Private Bytes</Counter>
+		<Counter>\System\Context Switches/sec</Counter>
+		<Counter>\System\Processor Queue Length</Counter>
+		<Counter>\System\Threads</Counter>
+		<Counter>\ASP.NET Applications(*)\% Managed Processor Time (estimated)</Counter>
+		<Counter>\ASP.NET Applications(*)\Anonymous Requests</Counter>
+		<Counter>\ASP.NET Applications(*)\Managed Memory Used (estimated)</Counter>
+		<Counter>\ASP.NET Applications(*)\Cache Total Hits</Counter>
+		<Counter>\ASP.NET Applications(*)\Cache Total Misses</Counter>
+		<Counter>\ASP.NET Applications(*)\Errors Unhandled During Execution</Counter>
+		<Counter>\ASP.NET Applications(*)\Request Execution Time</Counter>
+		<Counter>\ASP.NET Applications(*)\Request Wait Time</Counter>
+		<Counter>\ASP.NET Applications(*)\Requests/Sec</Counter>
+		<Counter>\ASP.NET Applications(*)\Sessions Active</Counter>
+		<Counter>\ASP.NET Applications(*)\Sessions Total</Counter>
+		<Counter>\ASP.NET Applications(*)\Transactions Total</Counter>
+		<Counter>\ASP.NET Applications(*)\Transactions/Sec</Counter>
+		<Counter>\ASP.NET Applications(*)\Requests Total</Counter>
+		<Counter>\Processor(_Total)\% User Time</Counter>
+		<Counter>\Processor(_Total)\% Privileged Time</Counter>
+		<Counter>\.NET CLR Memory(_Global_)\Gen 0 heap size</Counter>
+		<Counter>\.NET CLR Memory(_Global_)\Gen 1 heap size</Counter>
+		<Counter>\.NET CLR Memory(_Global_)\Gen 2 heap size</Counter>
+		<Counter>\.NET CLR Memory(_Global_)\Large Object Heap size</Counter>
+		<Counter>\.NET CLR Memory(_Global_)\# Total committed Bytes</Counter>
+		<Counter>\.NET CLR Memory(_Global_)\# Total reserved Bytes</Counter>
+		<Counter>\ASP.NET\Application Restarts</Counter>
+		<Counter>\ASP.NET\Worker Process Restarts</Counter>
+		<Counter>\ASP.NET\Requests Queued</Counter>
+		<Counter>\ASP.NET Applications(__Total__)\Requests Rejected</Counter>
+		<Counter>\ASP.NET Applications(__Total__)\Pipeline Instance Count</Counter>
+		<Counter>\ASP.NET Applications(__Total__)\Compilations Total</Counter>
+		<Counter>\Memory\Pages Input/sec</Counter>
+		<Counter>\Memory\Page Faults/sec</Counter>
+		<Counter>\Process(w3wp)\Virtual Bytes</Counter>
+		<Counter>\Process(w3wp)\Page Faults/sec</Counter>
+		<Counter>\Process(w3wp)\IO Read Bytes/sec</Counter>
+		<Counter>\Process(w3wp)\IO Write Bytes/sec</Counter>
+		<Counter>\Process(w3wp)\% Privileged Time</Counter>
+		<Counter>\Process(w3wp)\% Processor Time</Counter>
+		<Counter>\Process(w3wp)\% User Time</Counter>
+		<Counter>\Process(w3wp)\Handle Count</Counter>
+		<Counter>\Process(w3wp)\ID Process</Counter>
+		<Counter>\Memory\Committed Bytes</Counter>
+		<Counter>\Network Interface(*)\Bytes Received/sec</Counter>
+		<Counter>\Network Interface(*)\Bytes Sent/sec</Counter>
+		<Counter>\PhysicalDisk(_Total)\Avg. Disk Queue Length</Counter>
+		<Counter>\PhysicalDisk(_Total)\Avg. Disk sec/Read</Counter>
+		<Counter>\PhysicalDisk(_Total)\Avg. Disk sec/Write</Counter>
+		<Counter>\.NET CLR Exceptions(_Global_)\# of Exceps Thrown / sec</Counter>
+		<Counter>\Web Service\Current Anonymous Users</Counter>
+		<Counter>\Web Service(_Total)\Current Connections</Counter>
+		<CounterDisplayName>\.NET CLR LocksAndThreads(w3wp)\# of current logical Threads</CounterDisplayName>
+		<CounterDisplayName>\.NET CLR Memory(w3wp)\# Bytes in all Heaps</CounterDisplayName>
+		<CounterDisplayName>\Process(w3wp)\Private Bytes</CounterDisplayName>
+		<CounterDisplayName>\System\Context Switches/sec</CounterDisplayName>
+		<CounterDisplayName>\System\Processor Queue Length</CounterDisplayName>
+		<CounterDisplayName>\System\Threads</CounterDisplayName>
+		<CounterDisplayName>\ASP.NET Applications(*)\% Managed Processor Time (estimated)</CounterDisplayName>
+		<CounterDisplayName>\ASP.NET Applications(*)\Anonymous Requests</CounterDisplayName>
+		<CounterDisplayName>\ASP.NET Applications(*)\Managed Memory Used (estimated)</CounterDisplayName>
+		<CounterDisplayName>\ASP.NET Applications(*)\Cache Total Hits</CounterDisplayName>
+		<CounterDisplayName>\ASP.NET Applications(*)\Cache Total Misses</CounterDisplayName>
+		<CounterDisplayName>\ASP.NET Applications(*)\Errors Unhandled During Execution</CounterDisplayName>
+		<CounterDisplayName>\ASP.NET Applications(*)\Request Execution Time</CounterDisplayName>
+		<CounterDisplayName>\ASP.NET Applications(*)\Request Wait Time</CounterDisplayName>
+		<CounterDisplayName>\ASP.NET Applications(*)\Requests/Sec</CounterDisplayName>
+		<CounterDisplayName>\ASP.NET Applications(*)\Sessions Active</CounterDisplayName>
+		<CounterDisplayName>\ASP.NET Applications(*)\Sessions Total</CounterDisplayName>
+		<CounterDisplayName>\ASP.NET Applications(*)\Transactions Total</CounterDisplayName>
+		<CounterDisplayName>\ASP.NET Applications(*)\Transactions/Sec</CounterDisplayName>
+		<CounterDisplayName>\ASP.NET Applications(*)\Requests Total</CounterDisplayName>
+		<CounterDisplayName>\Processor(_Total)\% User Time</CounterDisplayName>
+		<CounterDisplayName>\Processor(_Total)\% Privileged Time</CounterDisplayName>
+		<CounterDisplayName>\.NET CLR Memory(_Global_)\Gen 0 heap size</CounterDisplayName>
+		<CounterDisplayName>\.NET CLR Memory(_Global_)\Gen 1 heap size</CounterDisplayName>
+		<CounterDisplayName>\.NET CLR Memory(_Global_)\Gen 2 heap size</CounterDisplayName>
+		<CounterDisplayName>\.NET CLR Memory(_Global_)\Large Object Heap size</CounterDisplayName>
+		<CounterDisplayName>\.NET CLR Memory(_Global_)\# Total committed Bytes</CounterDisplayName>
+		<CounterDisplayName>\.NET CLR Memory(_Global_)\# Total reserved Bytes</CounterDisplayName>
+		<CounterDisplayName>\ASP.NET\Application Restarts</CounterDisplayName>
+		<CounterDisplayName>\ASP.NET\Worker Process Restarts</CounterDisplayName>
+		<CounterDisplayName>\ASP.NET\Requests Queued</CounterDisplayName>
+		<CounterDisplayName>\ASP.NET Applications(__Total__)\Requests Rejected</CounterDisplayName>
+		<CounterDisplayName>\ASP.NET Applications(__Total__)\Pipeline Instance Count</CounterDisplayName>
+		<CounterDisplayName>\ASP.NET Applications(__Total__)\Compilations Total</CounterDisplayName>
+		<CounterDisplayName>\Memory\Pages Input/sec</CounterDisplayName>
+		<CounterDisplayName>\Memory\Page Faults/sec</CounterDisplayName>
+		<CounterDisplayName>\Process(w3wp)\Virtual Bytes</CounterDisplayName>
+		<CounterDisplayName>\Process(w3wp)\Page Faults/sec</CounterDisplayName>
+		<CounterDisplayName>\Process(w3wp)\IO Read Bytes/sec</CounterDisplayName>
+		<CounterDisplayName>\Process(w3wp)\IO Write Bytes/sec</CounterDisplayName>
+		<CounterDisplayName>\Process(w3wp)\% Privileged Time</CounterDisplayName>
+		<CounterDisplayName>\Process(w3wp)\% Processor Time</CounterDisplayName>
+		<CounterDisplayName>\Process(w3wp)\% User Time</CounterDisplayName>
+		<CounterDisplayName>\Process(w3wp)\Handle Count</CounterDisplayName>
+		<CounterDisplayName>\Process(w3wp)\ID Process</CounterDisplayName>
+		<CounterDisplayName>\Memory\Committed Bytes</CounterDisplayName>
+		<CounterDisplayName>\Network Interface(*)\Bytes Received/sec</CounterDisplayName>
+		<CounterDisplayName>\Network Interface(*)\Bytes Sent/sec</CounterDisplayName>
+		<CounterDisplayName>\PhysicalDisk(_Total)\Avg. Disk Queue Length</CounterDisplayName>
+		<CounterDisplayName>\PhysicalDisk(_Total)\Avg. Disk sec/Read</CounterDisplayName>
+		<CounterDisplayName>\PhysicalDisk(_Total)\Avg. Disk sec/Write</CounterDisplayName>
+		<CounterDisplayName>\.NET CLR Exceptions(_Global_)\# of Exceps Thrown / sec</CounterDisplayName>
+		<CounterDisplayName>\Web Service\Current Anonymous Users</CounterDisplayName>
+		<CounterDisplayName>\Web Service(_Total)\Current Connections</CounterDisplayName>
+	</PerformanceCounterDataCollector>
+	<Schedule>
+		<StartDate>9/23/2013</StartDate>
+		<EndDate>
+		</EndDate>
+		<StartTime>
+		</StartTime>
+		<Days>127</Days>
+	</Schedule>
+	<DataManager>
+		<Enabled>0</Enabled>
+		<CheckBeforeRunning>0</CheckBeforeRunning>
+		<MinFreeDisk>0</MinFreeDisk>
+		<MaxSize>0</MaxSize>
+		<MaxFolderCount>0</MaxFolderCount>
+		<ResourcePolicy>0</ResourcePolicy>
+		<ReportFileName>report.html</ReportFileName>
+		<RuleTargetFileName>report.xml</RuleTargetFileName>
+		<EventsFileName>
+		</EventsFileName>
+	</DataManager>
+</DataCollectorSet>

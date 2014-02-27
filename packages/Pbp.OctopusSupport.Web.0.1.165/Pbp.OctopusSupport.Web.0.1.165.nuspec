@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Pbp.OctopusSupport.Web</id>
+    <version>0.1.165</version>
+    <title>Pbp.OctopusSupport.Web</title>
+    <authors>PayByPhone</authors>
+    <owners>PayByPhone</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Octopus support for PBP web apps</description>
+    <summary>Octopus support for PBP web apps</summary>
+    <dependencies>
+      <dependency id="OctoPack" version="2.0.20" />
+    </dependencies>
+  </metadata>
+</package>
