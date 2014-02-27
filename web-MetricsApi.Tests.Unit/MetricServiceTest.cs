@@ -25,7 +25,8 @@ namespace web_MetricsApi.Tests.Unit
         [SetUp]
         public void SetUp()
         {
-            _clientFactory = new CoreClientFactory();
+            _metricClient = MockRepository.GenerateMock<IMetricClient>();
+            _clientFactory = MockRepository.GenerateMock<ICoreClientFactory>();
             _metricRepository = MockRepository.GenerateStub<IMetricRepository>();
             _service = new MetricService(_clientFactory, _metricRepository);
         }
@@ -45,10 +46,11 @@ namespace web_MetricsApi.Tests.Unit
                     Type = metricType
                 };
 
-            _metricClient = MockRepository.GenerateMock<IMetricClient>();
+            _clientFactory.Expect(x => x.FindClient<IMetricClient>()).Return(_metricClient);
 
-            var method = _service.FindClientActionToInvoke<MetricPipeClient>(metric);
+            var method = _service.FindClientActionToInvoke<IMetricClient>(metric);
             method.Invoke(metric.Name, metric.Value, metric.Time);
+
 
             switch (metricType)
             {
@@ -104,24 +106,26 @@ namespace web_MetricsApi.Tests.Unit
                 Type = metricType
             };
 
-            var metricClient = MockRepository.GenerateMock<IMetricClient>();
-            var method = _service.FindClientActionToInvoke<MetricPipeClient>(metric);
+            _clientFactory.Expect(x => x.FindClient<IMetricClient>()).Return(_metricClient);
+
+            var method = _service.FindClientActionToInvoke<IMetricClient>(metric);
+            method.Invoke(metric.Name, metric.Value, metric.Time);
 
             _service.Publish(method, metric);
 
             switch (metricType)
             {
                     case MetricType.Count:
-                    metricClient.AssertWasCalled(x => x.LogCount(metric.Name, metric.Value, metric.Time));
+                    _metricClient.AssertWasCalled(x => x.LogCount(metric.Name, metric.Value, metric.Time));
                     break;
                     case MetricType.Gauge:
-                    metricClient.AssertWasCalled(x => x.LogGauge(metric.Name, metric.Value, metric.Time));
+                    _metricClient.AssertWasCalled(x => x.LogGauge(metric.Name, metric.Value, metric.Time));
                     break;
                     case MetricType.Set:
-                    metricClient.AssertWasCalled(x => x.LogSet(metric.Name, metric.Value, metric.Time));
+                    _metricClient.AssertWasCalled(x => x.LogSet(metric.Name, metric.Value, metric.Time));
                     break;
                     case MetricType.Timing:
-                    metricClient.AssertWasCalled(x => x.LogTiming(metric.Name, metric.Value, metric.Time));
+                    _metricClient.AssertWasCalled(x => x.LogTiming(metric.Name, metric.Value, metric.Time));
                     break;
             }
         }

@@ -9,6 +9,7 @@ namespace web_MetricsApi.Services
     {
         public ICoreClientFactory _clientFactory;
         public IMetricRepository _metricRepository;
+        public IMetricClient _node;
 
         public MetricService(ICoreClientFactory clientFactory, IMetricRepository metricRepository)
         {
@@ -16,9 +17,9 @@ namespace web_MetricsApi.Services
             _metricRepository = metricRepository;
         }
 
-        public Action<string, long, DateTime> FindClientActionToInvoke<T>(Metric metric) where T : class , IMetricClient 
+        public Action<string, long, DateTime> FindClientActionToInvoke<T>(Metric metric) where T: class , IMetricClient
         {
-            var node = _clientFactory.FindClient<T>();
+            _node = _clientFactory.FindClient<T>();
 
             if(metric == null)
                 throw new ArgumentNullException("metric");
@@ -28,16 +29,16 @@ namespace web_MetricsApi.Services
             switch (metric.Type)
             {
                 case MetricType.Timing:
-                    clientMethod = (s, v, t) => node.LogTiming(s, v, t);                  
+                    clientMethod = (s, v, t) => _node.LogTiming(s, v, t);                  
                     break;
                 case MetricType.Count:
-                    clientMethod = (s, v, t) => node.LogCount(s, v, t);   
+                    clientMethod = (s, v, t) => _node.LogCount(s, v, t);   
                     break;
                 case MetricType.Gauge:
-                    clientMethod = (s, v, t) => node.LogGauge(s, v, t);   
+                    clientMethod = (s, v, t) => _node.LogGauge(s, v, t);   
                     break;
                 case MetricType.Set:
-                    clientMethod = (s, v, t) => node.LogSet(s, v, t);   
+                    clientMethod = (s, v, t) => _node.LogSet(s, v, t);   
                     break;
             }
 

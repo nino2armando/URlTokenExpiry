@@ -12,8 +12,7 @@ namespace web_MetricsApi
         {
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{AppName}",
-                defaults:new {RouteParameter.Optional}          
+                routeTemplate: "api/{controller}/{AppName}"        
             );
 
             // Filters

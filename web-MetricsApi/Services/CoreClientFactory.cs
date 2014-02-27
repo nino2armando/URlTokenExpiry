@@ -7,7 +7,7 @@ namespace web_MetricsApi.Services
 {
     public class CoreClientFactory : ICoreClientFactory
     {
-        public T FindClient<T>() where T : class 
+        public T FindClient<T>() where T : class, IMetricClient
         {
             object node = default(T);
 

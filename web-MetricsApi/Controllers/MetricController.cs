@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Web;
 using System.Web.Http;
 using AutoMapper;
 using Pbp.Metrics.Core.Clients;
@@ -9,13 +10,13 @@ using web_MetricsApi.Contracts;
 using web_MetricsApi.Filters;
 using web_MetricsApi.Models;
 using web_MetricsApi.Services;
+using web_MetricsApi.Extentions;
 
 namespace web_MetricsApi.Controllers
 {
     public class MetricController : ApiController
     {
-        private ICoreClientFactory _coreClientFactory;
-        private IMetricService _metricService;
+        private readonly IMetricService _metricService;
 
         public MetricController(ICoreClientFactory clientFactory, IMetricService metricService)
         {
@@ -24,22 +25,27 @@ namespace web_MetricsApi.Controllers
             if(metricService == null)
                 throw new ArgumentNullException("metricService");
 
-            _coreClientFactory = clientFactory;
             _metricService = metricService;
         }
 
         // POST api/metric
         [ValidateModel]
-        public HttpResponseMessage Post(MetricContract metric)
+        public HttpResponseMessage Post(bool persist, MetricContract metric)
         {
-            if (!TypeValidator(metric.Type))
+            var url = HttpContext.Current.Request.Url.AbsolutePath;
+
+            if (! metric.ValidateType())
             {
                 ModelState.AddModelError("Type","Invalid Type");
             }
             if (metric != null && ModelState.IsValid)
             {
                 var metricModel = Mapper.Map<MetricContract, Metric>(metric);
-                var clientMethod = _metricService.FindClientActionToInvoke<MetricPipeClient>(metricModel);
+
+                var clientMethod = persist
+                                          ? _metricService.FindClientActionToInvoke<MetricPipeClient>(metricModel)
+                                          : _metricService.FindClientActionToInvoke<GraphiteClient>(metricModel);
+                
                 _metricService.Publish(clientMethod, metricModel);
 
                 return new HttpResponseMessage(HttpStatusCode.OK);
@@ -48,10 +54,5 @@ namespace web_MetricsApi.Controllers
             return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
         }
 
-        public bool TypeValidator(string type)
-        {
-            return Enum.GetNames(typeof (MetricType)).Contains(type);
-
-        }
     }
 }

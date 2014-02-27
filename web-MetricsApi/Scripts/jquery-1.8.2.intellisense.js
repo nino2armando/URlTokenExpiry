@@ -228,8 +228,8 @@ intellisense.annotate(jQuery, {
   },
   'isXMLDoc': function() {
     /// <signature>
-    ///   <summary>Check to see if a DOM node is within an XML document (or is an XML document).</summary>
-    ///   <param name="node" type="Element">The DOM node that will be checked to see if it's in an XML document.</param>
+    ///   <summary>Check to see if a DOM _node is within an XML document (or is an XML document).</summary>
+    ///   <param name="_node" type="Element">The DOM _node that will be checked to see if it's in an XML document.</param>
     ///   <returns type="Boolean" />
     /// </signature>
   },
@@ -1031,11 +1031,11 @@ intellisense.annotate(jQuery.fn, {
     /// </signature>
   },
   'contents': function() {
-    /// <summary>Get the children of each element in the set of matched elements, including text and comment nodes.</summary>
+    /// <summary>Get the children of each element in the set of matched elements, including text and comment _nodes.</summary>
     /// <returns type="jQuery" />
   },
   'context': function() {
-    /// <summary>The DOM node context originally passed to jQuery(); if none was passed then context will likely be the document.</summary>
+    /// <summary>The DOM _node context originally passed to jQuery(); if none was passed then context will likely be the document.</summary>
     /// <returns type="Element" />
   },
   'css': function() {
@@ -1161,11 +1161,11 @@ intellisense.annotate(jQuery.fn, {
   'element': function() {
     /// <signature>
     ///   <summary>Selects all elements with the given tag name.</summary>
-    ///   <param name="element" type="String">An element to search for. Refers to the tagName of DOM nodes.</param>
+    ///   <param name="element" type="String">An element to search for. Refers to the tagName of DOM _nodes.</param>
     /// </signature>
   },
   'empty': function() {
-    /// <summary>Select all elements that have no children (including text nodes).</summary>
+    /// <summary>Select all elements that have no children (including text _nodes).</summary>
   },
   'enabled': function() {
     /// <summary>Selects all elements that are enabled.</summary>
@@ -1754,14 +1754,14 @@ intellisense.annotate(jQuery.fn, {
   },
   'nextUntil': function() {
     /// <signature>
-    ///   <summary>Get all following siblings of each element up to but not including the element matched by the selector, DOM node, or jQuery object passed.</summary>
+    ///   <summary>Get all following siblings of each element up to but not including the element matched by the selector, DOM _node, or jQuery object passed.</summary>
     ///   <param name="selector" type="String">A string containing a selector expression to indicate where to stop matching following sibling elements.</param>
     ///   <param name="filter" type="String">A string containing a selector expression to match elements against.</param>
     ///   <returns type="jQuery" />
     /// </signature>
     /// <signature>
-    ///   <summary>Get all following siblings of each element up to but not including the element matched by the selector, DOM node, or jQuery object passed.</summary>
-    ///   <param name="element" type="Element">A DOM node or jQuery object indicating where to stop matching following sibling elements.</param>
+    ///   <summary>Get all following siblings of each element up to but not including the element matched by the selector, DOM _node, or jQuery object passed.</summary>
+    ///   <param name="element" type="Element">A DOM _node or jQuery object indicating where to stop matching following sibling elements.</param>
     ///   <param name="filter" type="String">A string containing a selector expression to match elements against.</param>
     ///   <returns type="jQuery" />
     /// </signature>
@@ -1902,14 +1902,14 @@ intellisense.annotate(jQuery.fn, {
   },
   'parentsUntil': function() {
     /// <signature>
-    ///   <summary>Get the ancestors of each element in the current set of matched elements, up to but not including the element matched by the selector, DOM node, or jQuery object.</summary>
+    ///   <summary>Get the ancestors of each element in the current set of matched elements, up to but not including the element matched by the selector, DOM _node, or jQuery object.</summary>
     ///   <param name="selector" type="String">A string containing a selector expression to indicate where to stop matching ancestor elements.</param>
     ///   <param name="filter" type="String">A string containing a selector expression to match elements against.</param>
     ///   <returns type="jQuery" />
     /// </signature>
     /// <signature>
-    ///   <summary>Get the ancestors of each element in the current set of matched elements, up to but not including the element matched by the selector, DOM node, or jQuery object.</summary>
-    ///   <param name="element" type="Element">A DOM node or jQuery object indicating where to stop matching ancestor elements.</param>
+    ///   <summary>Get the ancestors of each element in the current set of matched elements, up to but not including the element matched by the selector, DOM _node, or jQuery object.</summary>
+    ///   <param name="element" type="Element">A DOM _node or jQuery object indicating where to stop matching ancestor elements.</param>
     ///   <param name="filter" type="String">A string containing a selector expression to match elements against.</param>
     ///   <returns type="jQuery" />
     /// </signature>
@@ -1957,14 +1957,14 @@ intellisense.annotate(jQuery.fn, {
   },
   'prevUntil': function() {
     /// <signature>
-    ///   <summary>Get all preceding siblings of each element up to but not including the element matched by the selector, DOM node, or jQuery object.</summary>
+    ///   <summary>Get all preceding siblings of each element up to but not including the element matched by the selector, DOM _node, or jQuery object.</summary>
     ///   <param name="selector" type="String">A string containing a selector expression to indicate where to stop matching preceding sibling elements.</param>
     ///   <param name="filter" type="String">A string containing a selector expression to match elements against.</param>
     ///   <returns type="jQuery" />
     /// </signature>
     /// <signature>
-    ///   <summary>Get all preceding siblings of each element up to but not including the element matched by the selector, DOM node, or jQuery object.</summary>
-    ///   <param name="element" type="Element">A DOM node or jQuery object indicating where to stop matching preceding sibling elements.</param>
+    ///   <summary>Get all preceding siblings of each element up to but not including the element matched by the selector, DOM _node, or jQuery object.</summary>
+    ///   <param name="element" type="Element">A DOM _node or jQuery object indicating where to stop matching preceding sibling elements.</param>
     ///   <param name="filter" type="String">A string containing a selector expression to match elements against.</param>
     ///   <returns type="jQuery" />
     /// </signature>
